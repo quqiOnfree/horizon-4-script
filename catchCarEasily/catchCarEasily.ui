@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>catchCarEasilyClass</class>
+ <widget class="QWidget" name="catchCarEasilyClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>512</width>
+    <height>413</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>catchCarEasily</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_2">
+   <item row="2" column="1" rowspan="10">
+    <widget class="QLabel" name="label_8">
+     <property name="text">
+      <string>流程
+
+快捷键
+ctrl+F10</string>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="4">
+    <widget class="QSpinBox" name="spinBox_3">
+     <property name="minimum">
+      <number>0</number>
+     </property>
+     <property name="maximum">
+      <number>100000000</number>
+     </property>
+     <property name="value">
+      <number>1000</number>
+     </property>
+    </widget>
+   </item>
+   <item row="6" column="4">
+    <widget class="QSpinBox" name="spinBox_8">
+     <property name="minimum">
+      <number>0</number>
+     </property>
+     <property name="maximum">
+      <number>100000000</number>
+     </property>
+     <property name="value">
+      <number>5</number>
+     </property>
+    </widget>
+   </item>
+   <item row="11" column="4">
+    <widget class="QSpinBox" name="spinBox_10">
+     <property name="minimum">
+      <number>0</number>
+     </property>
+     <property name="maximum">
+      <number>100000000</number>
+     </property>
+     <property name="value">
+      <number>3</number>
+     </property>
+    </widget>
+   </item>
+   <item row="8" column="3">
+    <widget class="QLabel" name="label_15">
+     <property name="text">
+      <string>领车时enter点击次数</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="1" colspan="6">
+    <widget class="QLabel" name="label_9">
+     <property name="font">
+      <font>
+       <pointsize>20</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>曲奇脚本</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="4">
+    <widget class="QSpinBox" name="spinBox">
+     <property name="minimum">
+      <number>0</number>
+     </property>
+     <property name="maximum">
+      <number>100000000</number>
+     </property>
+     <property name="value">
+      <number>5</number>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="7">
+    <spacer name="horizontalSpacer_2">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>40</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="3" column="3">
+    <widget class="QLabel" name="label_3">
+     <property name="text">
+      <string>等待加载时间(ms)</string>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="3">
+    <widget class="QLabel" name="label_4">
+     <property name="text">
+      <string>按Y次数</string>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="6">
+    <widget class="QSpinBox" name="spinBox_5">
+     <property name="minimum">
+      <number>0</number>
+     </property>
+     <property name="maximum">
+      <number>100000000</number>
+     </property>
+     <property name="value">
+      <number>100</number>
+     </property>
+    </widget>
+   </item>
+   <item row="6" column="6">
+    <widget class="QSpinBox" name="spinBox_9">
+     <property name="minimum">
+      <number>0</number>
+     </property>
+     <property name="maximum">
+      <number>100000000</number>
+     </property>
+     <property name="value">
+      <number>100</number>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="5">
+    <widget class="QLabel" name="label_5">
+     <property name="text">
+      <string>按Y每次间隔(ms)</string>
+     </property>
+    </widget>
+   </item>
+   <item row="6" column="5">
+    <widget class="QLabel" name="label_12">
+     <property name="text">
+      <string>enter每次间隔</string>
+     </property>
+    </widget>
+   </item>
+   <item row="10" column="4">
+    <widget class="QSpinBox" name="spinBox_7">
+     <property name="minimum">
+      <number>0</number>
+     </property>
+     <property name="maximum">
+      <number>100000000</number>
+     </property>
+     <property name="value">
+      <number>0</number>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="0">
+    <spacer name="horizontalSpacer">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>40</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="2" column="3">
+    <widget class="QLabel" name="label">
+     <property name="text">
+      <string>进入拍卖点击次数</string>
+     </property>
+    </widget>
+   </item>
+   <item row="10" column="3">
+    <widget class="QLabel" name="label_10">
+     <property name="text">
+      <string>等待加载时间(ms)</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="6">
+    <widget class="QSpinBox" name="spinBox_2">
+     <property name="minimum">
+      <number>0</number>
+     </property>
+     <property name="maximum">
+      <number>100000000</number>
+     </property>
+     <property name="value">
+      <number>100</number>
+     </property>
+    </widget>
+   </item>
+   <item row="8" column="5">
+    <widget class="QLabel" name="label_16">
+     <property name="text">
+      <string>enter每次间隔</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="5">
+    <widget class="QLabel" name="label_2">
+     <property name="text">
+      <string>进入拍卖每次间隔(ms)</string>
+     </property>
+    </widget>
+   </item>
+   <item row="14" column="4">
+    <spacer name="verticalSpacer">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>40</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="8" column="4">
+    <widget class="QSpinBox" name="spinBox_13">
+     <property name="minimum">
+      <number>0</number>
+     </property>
+     <property name="maximum">
+      <number>100000000</number>
+     </property>
+     <property name="value">
+      <number>1</number>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="4">
+    <spacer name="verticalSpacer_2">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>40</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="8" column="6">
+    <widget class="QSpinBox" name="spinBox_14">
+     <property name="minimum">
+      <number>0</number>
+     </property>
+     <property name="maximum">
+      <number>100000000</number>
+     </property>
+     <property name="value">
+      <number>100</number>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="4">
+    <widget class="QSpinBox" name="spinBox_4">
+     <property name="minimum">
+      <number>0</number>
+     </property>
+     <property name="maximum">
+      <number>100000000</number>
+     </property>
+     <property name="value">
+      <number>5</number>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="3">
+    <widget class="QLabel" name="label_6">
+     <property name="text">
+      <string>等待加载时间(ms)</string>
+     </property>
+    </widget>
+   </item>
+   <item row="15" column="3" colspan="4">
+    <widget class="QWidget" name="widget" native="true">
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QPushButton" name="pushButton">
+        <property name="text">
+         <string>开始</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_2">
+        <property name="text">
+         <string>停止</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="7" column="3">
+    <widget class="QLabel" name="label_14">
+     <property name="text">
+      <string>等待加载时间(ms)</string>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="4">
+    <widget class="QSpinBox" name="spinBox_6">
+     <property name="minimum">
+      <number>0</number>
+     </property>
+     <property name="maximum">
+      <number>100000000</number>
+     </property>
+     <property name="value">
+      <number>0</number>
+     </property>
+    </widget>
+   </item>
+   <item row="11" column="6">
+    <widget class="QSpinBox" name="spinBox_11">
+     <property name="minimum">
+      <number>0</number>
+     </property>
+     <property name="maximum">
+      <number>100000000</number>
+     </property>
+     <property name="value">
+      <number>500</number>
+     </property>
+    </widget>
+   </item>
+   <item row="11" column="5">
+    <widget class="QLabel" name="label_13">
+     <property name="text">
+      <string>esc每次间隔</string>
+     </property>
+    </widget>
+   </item>
+   <item row="11" column="3">
+    <widget class="QLabel" name="label_11">
+     <property name="text">
+      <string>返回时esc点击次数</string>
+     </property>
+    </widget>
+   </item>
+   <item row="7" column="4">
+    <widget class="QSpinBox" name="spinBox_12">
+     <property name="minimum">
+      <number>0</number>
+     </property>
+     <property name="maximum">
+      <number>100000000</number>
+     </property>
+     <property name="value">
+      <number>7000</number>
+     </property>
+    </widget>
+   </item>
+   <item row="6" column="3">
+    <widget class="QLabel" name="label_7">
+     <property name="text">
+      <string>购买时enter点击次数</string>
+     </property>
+    </widget>
+   </item>
+   <item row="12" column="3">
+    <widget class="QLabel" name="label_17">
+     <property name="text">
+      <string>整个循环时间(ms)</string>
+     </property>
+    </widget>
+   </item>
+   <item row="12" column="4">
+    <widget class="QSpinBox" name="spinBox_15">
+     <property name="minimum">
+      <number>0</number>
+     </property>
+     <property name="maximum">
+      <number>100000000</number>
+     </property>
+     <property name="value">
+      <number>1000</number>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="catchCarEasily.qrc"/>
+ </resources>
+ <connections/>
+</ui>
