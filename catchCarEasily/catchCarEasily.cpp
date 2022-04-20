@@ -10,6 +10,8 @@
 
 using namespace std;
 
+#define SOFTWARE_VERSION "v0.0.2"
+
 void down(int vk)
 {
 	keybd_event(vk, 0, 0, 0);
@@ -63,10 +65,23 @@ void catchCarEasily::startThread()
 			{
 				//if (closeThr) return;
 				Sleep(ui.spinBox_15->value());
-				Sleep(1000);
 
 				if (open)
 				{
+					{
+						HWND hWnd = ::GetDesktopWindow();
+						HDC hdc = ::GetDC(hWnd);
+						COLORREF pixel = ::GetPixel(hdc, (double)520 / (double)1920 * (double)::GetSystemMetrics(SM_CXSCREEN), (double)429 / (double)1080 * (double)::GetSystemMetrics(SM_CYSCREEN));
+						if (pixel != CLR_INVALID) {
+							if (255 == GetRValue(pixel) && 255 == GetGValue(pixel) && 255 == GetBValue(pixel))
+							{
+								if (!open) continue;
+								press(VK_ESCAPE);
+								continue;
+							}
+						}
+					}
+
 					//ÅÄÂô½øÈë
 					for (auto i = 0ll; i < ui.spinBox->value(); i++)
 					{
@@ -84,12 +99,8 @@ void catchCarEasily::startThread()
 						HWND hWnd = ::GetDesktopWindow();
 						HDC hdc = ::GetDC(hWnd);
 						COLORREF pixel = ::GetPixel(hdc, (double)520 / (double)1920 * (double)::GetSystemMetrics(SM_CXSCREEN), (double)429 / (double)1080 * (double)::GetSystemMetrics(SM_CYSCREEN));
-						qDebug() << (double)520 / (double)1920 * (double)::GetSystemMetrics(SM_CXSCREEN) << (double)429 / (double)1080 * (double)::GetSystemMetrics(SM_CYSCREEN);
 						if (pixel != CLR_INVALID) {
-							int red = GetRValue(pixel);
-							int green = GetGValue(pixel);
-							int blue = GetBValue(pixel);
-							if (!(255 == red && 255 == green && 255 == blue))
+							if (!(255 == GetRValue(pixel) && 255 == GetGValue(pixel) && 255 == GetBValue(pixel)))
 							{
 								if (!open) continue;
 								press(VK_ESCAPE);
